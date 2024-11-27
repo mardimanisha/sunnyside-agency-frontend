@@ -4,7 +4,8 @@ import Image from 'next/image'
 
 export const HeroSection = () => {
   return (
-    <div className="sm:bg-[url('/images/desktop/image-header.jpg')] bg-[url('/images/mobile/image-header.jpg')] bg-cover bg-center sm:h-screen h-[915px] w-full">
+    <div>
+      <div className="sm:bg-[url('/images/desktop/image-header.jpg')] bg-[url('/images/mobile/image-header.jpg')] bg-cover bg-center sm:h-screen h-[915px] w-full">
         <div className='p-2'>
             <Navbar />
             <div className='flex flex-col justify-evenly items-center my-40 sm:my-0'>
@@ -12,6 +13,7 @@ export const HeroSection = () => {
               <Image src='/images/icon-arrow-down.svg' alt='arrow_icon' width={40} height={40} className='sm:m-10 m-16 sm:h-26 sm:w-8' />
             </div>
         </div>
+      </div>
     </div>
   )
 }
