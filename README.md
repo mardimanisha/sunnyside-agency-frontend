@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Hero Section](./images/HeroSection.jpg)
-![Navbar](./images/Navbar.jpg)
+![Hero Section](/images/HeroSection.jpg)
+![Navbar](/images/Navbar.jpg)
 
 
 ### Links
