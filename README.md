@@ -54,22 +54,22 @@ major learnings from the Sunnyside Agency landing page project, which I built as
 1. Responsive Design
 One of the primary objectives of this project was to ensure that the landing page is responsive across various devices. I learned how to utilize CSS Grid and Flexbox effectively to create a layout that adjusts seamlessly to different screen sizes.
 
-Key Takeaway: Using media queries and responsive units, I was able to create a layout that works well on both mobile and desktop devices.
+   Key Takeaway: Using media queries and responsive units, I was able to create a layout that works well on both mobile and desktop devices.
 
 2. Component-Based Architecture
 Building this project reinforced the importance of breaking down the UI into reusable components. Each section of the landing page (like the Hero Section, Features, Services, Testimonials, and Footer) was created as a separate component. This approach promotes code reusability and maintainability.
 
-Key Takeaway: By encapsulating functionality and styles within components, I can manage the codebase more efficiently and make updates without affecting other parts of the application.
+   Key Takeaway: By encapsulating functionality and styles within components, I can manage the codebase more efficiently and make updates without affecting other parts of the application.
 
 3. Image Optimization with Next.js
 Next.js provides built-in image optimization features that I leveraged to improve the performance of the landing page. By using the Image component from Next.js, images are automatically optimized for different screen sizes.
 
-Key Takeaway: Utilizing Next.js's Image component ensures that images load efficiently and adapt to the user's device, enhancing the overall user experience.
+   Key Takeaway: Utilizing Next.js's Image component ensures that images load efficiently and adapt to the user's device, enhancing the overall user experience.
 
 4. Implementing a Responsive Navbar
 Creating a responsive navigation bar that adapts to different screen sizes was a crucial learning experience. I implemented a toggle menu for mobile devices, ensuring that the navigation remains user-friendly across all devices.
 
-Key Takeaway: Managing state in React to control the visibility of the mobile menu taught me how to handle user interactions effectively.
+   Key Takeaway: Managing state in React to control the visibility of the mobile menu taught me how to handle user interactions effectively.
 
 The Sunnyside Agency landing page project was a valuable learning experience that enhanced my skills in modern web development practices. By focusing on responsive design, component-based architecture, and accessibility, I was able to create a user-friendly and visually appealing landing page. The use of Next.js and Tailwind CSS streamlined the development process, allowing for rapid prototyping and efficient styling.
 
