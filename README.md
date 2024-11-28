@@ -12,11 +12,8 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,85 +26,112 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Hero Section](./images/HeroSection.jpg)
+![Navbar](./images/Navbar.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/mardimanisha/sunnyside-agency-frontend)
+- Live Site URL: (https://sunnyside-agency-frontend.vercel.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- Tailwind CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Tailwind CSS](https://tailwindcss.com/) - For styles
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+major learnings from the Sunnyside Agency landing page project, which I built as part of the Frontend Mentor challenge. This project helped me enhance my skills in React, Next.js, and Tailwind CSS, and provided insights into responsive design and component-based architecture.
 
-To see how you can add code snippets, see below:
+1. Responsive Design
+One of the primary objectives of this project was to ensure that the landing page is responsive across various devices. I learned how to utilize CSS Grid and Flexbox effectively to create a layout that adjusts seamlessly to different screen sizes.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Key Takeaway: Using media queries and responsive units, I was able to create a layout that works well on both mobile and desktop devices.
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+``Tailwind CSS classes used for responsive design
+<div className="sm:flex sm:flex-row">
+  {/* Content here */}
+</div>
+ ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
+2. Component-Based Architecture
+Building this project reinforced the importance of breaking down the UI into reusable components. Each section of the landing page (like the Hero Section, Features, Services, Testimonials, and Footer) was created as a separate component. This approach promotes code reusability and maintainability.
+
+Key Takeaway: By encapsulating functionality and styles within components, I can manage the codebase more efficiently and make updates without affecting other parts of the application.
+
+``
+// HeroSection.tsx
+export const HeroSection = () => {
+  return (
+    <div>
+      <div className="sm:bg-[url('/images/desktop/image-header.jpg')] bg-[url('/images/mobile/image-header.jpg')] bg-cover bg-center sm:h-screen h-[915px] w-full">
+        {/* Content here */}
+      </div>
+    </div>
+  );
 };
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+3. Image Optimization with Next.js
+Next.js provides built-in image optimization features that I leveraged to improve the performance of the landing page. By using the Image component from Next.js, images are automatically optimized for different screen sizes.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Key Takeaway: Utilizing Next.js's Image component ensures that images load efficiently and adapt to the user's device, enhancing the overall user experience.
+
+```
+import Image from 'next/image';
+
+<Image
+  src="/images/mobile/image-transform.jpg"
+  alt="Transform your brand"
+  height={500}
+  width={500}
+  className="sm:hidden"
+/>
+```
+
+4. Implementing a Responsive Navbar
+Creating a responsive navigation bar that adapts to different screen sizes was a crucial learning experience. I implemented a toggle menu for mobile devices, ensuring that the navigation remains user-friendly across all devices.
+
+Key Takeaway: Managing state in React to control the visibility of the mobile menu taught me how to handle user interactions effectively.
+
+```
+const [isOpen, setIsOpen] = useState(false);
+
+const handleToggleMenu = () => {
+  setIsOpen(!isOpen);
+};
+
+return (
+  <div className={`${isOpen ? 'flex' : 'hidden'}`}>
+    {/* Mobile menu content here */}
+  </div>
+);
+```
+
+The Sunnyside Agency landing page project was a valuable learning experience that enhanced my skills in modern web development practices. By focusing on responsive design, component-based architecture, and accessibility, I was able to create a user-friendly and visually appealing landing page. The use of Next.js and Tailwind CSS streamlined the development process, allowing for rapid prototyping and efficient styling.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+While the Sunnyside Agency landing page project was a significant learning experience, there are several areas I plan to focus on for continued development. These areas will help me refine my skills, explore new technologies, and enhance the overall quality of my projects. Here are the key areas I aim to develop further:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+1. Advanced State Management in React
+As my projects grow in complexity, managing state effectively becomes crucial. While I utilized local state management for the mobile menu in this project, I want to explore more advanced state management solutions such as Context API and Redux. This will help me manage global state more efficiently, especially in larger applications where multiple components need to access and update shared data.
 
-### Useful resources
+2. Performance Optimization Techniques
+While the project utilized Next.js's built-in image optimization features, I want to delve deeper into performance optimization techniques. This includes analyzing the application's performance using tools like Lighthouse, implementing code-splitting, and exploring caching strategies to improve load times and overall user experience.
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+3. Exploring New Features of Tailwind CSS
+Tailwind CSS is continuously evolving, and I want to stay updated with its latest features and best practices. This includes exploring Tailwind JIT (Just-In-Time) mode for improved performance, as well as learning about new utility classes and plugins that can enhance the styling of my projects.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@ManishaMardi](https://www.frontendmentor.io/profile/mardimanisha)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
