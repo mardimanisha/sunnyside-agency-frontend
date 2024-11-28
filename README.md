@@ -56,65 +56,20 @@ One of the primary objectives of this project was to ensure that the landing pag
 
 Key Takeaway: Using media queries and responsive units, I was able to create a layout that works well on both mobile and desktop devices.
 
-``Tailwind CSS classes used for responsive design
-<div className="sm:flex sm:flex-row">
-  {/* Content here */}
-</div>
- ```
-
 2. Component-Based Architecture
 Building this project reinforced the importance of breaking down the UI into reusable components. Each section of the landing page (like the Hero Section, Features, Services, Testimonials, and Footer) was created as a separate component. This approach promotes code reusability and maintainability.
 
 Key Takeaway: By encapsulating functionality and styles within components, I can manage the codebase more efficiently and make updates without affecting other parts of the application.
-
-``
-// HeroSection.tsx
-export const HeroSection = () => {
-  return (
-    <div>
-      <div className="sm:bg-[url('/images/desktop/image-header.jpg')] bg-[url('/images/mobile/image-header.jpg')] bg-cover bg-center sm:h-screen h-[915px] w-full">
-        {/* Content here */}
-      </div>
-    </div>
-  );
-};
-```
 
 3. Image Optimization with Next.js
 Next.js provides built-in image optimization features that I leveraged to improve the performance of the landing page. By using the Image component from Next.js, images are automatically optimized for different screen sizes.
 
 Key Takeaway: Utilizing Next.js's Image component ensures that images load efficiently and adapt to the user's device, enhancing the overall user experience.
 
-```
-import Image from 'next/image';
-
-<Image
-  src="/images/mobile/image-transform.jpg"
-  alt="Transform your brand"
-  height={500}
-  width={500}
-  className="sm:hidden"
-/>
-```
-
 4. Implementing a Responsive Navbar
 Creating a responsive navigation bar that adapts to different screen sizes was a crucial learning experience. I implemented a toggle menu for mobile devices, ensuring that the navigation remains user-friendly across all devices.
 
 Key Takeaway: Managing state in React to control the visibility of the mobile menu taught me how to handle user interactions effectively.
-
-```
-const [isOpen, setIsOpen] = useState(false);
-
-const handleToggleMenu = () => {
-  setIsOpen(!isOpen);
-};
-
-return (
-  <div className={`${isOpen ? 'flex' : 'hidden'}`}>
-    {/* Mobile menu content here */}
-  </div>
-);
-```
 
 The Sunnyside Agency landing page project was a valuable learning experience that enhanced my skills in modern web development practices. By focusing on responsive design, component-based architecture, and accessibility, I was able to create a user-friendly and visually appealing landing page. The use of Next.js and Tailwind CSS streamlined the development process, allowing for rapid prototyping and efficient styling.
 
