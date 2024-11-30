@@ -35,19 +35,19 @@ export const Navbar = () => {
 
 
       {isButtonVisible && (
-        <button className="sm:hidden" onClick={handleToggleMenu}>
+        <a href='#contact' className="sm:hidden" onClick={handleToggleMenu}>
           <svg width="1.5rem" height="1.125rem" xmlns="http://www.w3.org/2000/svg">
             <path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fillRule="evenodd" />
           </svg>
-        </button>
+        </a>
       )}
 
       <div className={`${isOpen ? 'flex' : 'hidden'}`}>
-        <button className="sm:hidden" onClick={handleToggleMenu}>
+        <a href='#contact' className="sm:hidden" onClick={handleToggleMenu}>
           <svg width="1.5rem" height="1.125rem" xmlns="http://www.w3.org/2000/svg">
             <path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fillRule="evenodd" />
           </svg>
-        </button>
+        </a>
         <div className="flex justify-center items-center fixed bg-white mt-12 sm:hidden left-1/2 transform -translate-x-1/2 w-[90%] h-[72%] p-4">
           <ul className="flex flex-col text-neutral-darkGrayishBlue items-center space-y-6 p-8 text-base font-sm">
             <li className="relative">
