@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Gallery = () => {
   return (
-    <div>
+    <section>
       <div className='flex flex-col sm:flex-row'>
         <div className='flex flex-row'>
           <Image src={'/images/mobile/image-gallery-milkbottles.jpg'} alt='' height={200} width={200} className='sm:hidden w-1/2' />
@@ -18,6 +18,6 @@ export const Gallery = () => {
           <Image src={'/images/desktop/image-gallery-sugarcubes.jpg'} alt='' height={300} width={300} className='hidden sm:block w-1/2'/>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

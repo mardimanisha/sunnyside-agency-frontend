@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Services = () => {
   return (
-    <div className="sm:flex sm:flex-row">
+    <section className="sm:flex sm:flex-row">
       {/* Graphic Design Section */}
       <div className="bg-[url('/images/mobile/image-graphic-design.jpg')] sm:bg-[url('/images/desktop/image-graphic-design.jpg')] bg-cover bg-center h-[40rem] w-full sm:h-[31.25rem] sm:px-5% text-darkDesaturatedCyan flex items-end">
         <div className="flex flex-col items-center text-center p-6 pb-12 sm:pb-5">
@@ -22,6 +22,6 @@ export const Services = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

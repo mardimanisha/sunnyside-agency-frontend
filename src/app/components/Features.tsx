@@ -18,7 +18,7 @@ const FeatureSection = ({
   imageFirst?: boolean;
 }) => {
   return (
-    <div className={`sm:flex ${imageFirst ? 'flex-row' : 'flex-row-reverse'}`}>
+    <section className={`sm:flex ${imageFirst ? 'flex-row' : 'flex-row-reverse'}`}>
       {/* Image Section */}
       <div className="sm:w-1/2">
         <Image
@@ -49,7 +49,7 @@ const FeatureSection = ({
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Testimonials = () => {
   return (
-    <div>
+    <section>
       <div className='flex flex-col items-center py-16 sm:py-10'>
         <p className='uppercase text-neutral-grayishBlue font-bold font-fraunces tracking-widest p-10'>Client testimonials</p>
         <div className='sm:flex sm:flex-row sm:justify-around sm:px-32'>
@@ -35,6 +35,6 @@ export const Testimonials = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

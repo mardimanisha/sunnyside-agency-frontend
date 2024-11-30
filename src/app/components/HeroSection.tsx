@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export const HeroSection = () => {
   return (
-    <div>
+    <section>
       <div className="sm:bg-[url('/images/desktop/image-header.jpg')] bg-[url('/images/mobile/image-header.jpg')] bg-cover bg-center sm:h-screen h-[915px] w-full">
         <div className='p-4'>
             <Navbar />
@@ -14,6 +14,6 @@ export const HeroSection = () => {
             </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
