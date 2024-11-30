@@ -50,12 +50,20 @@ export const Navbar = () => {
         </button>
         <div className="flex justify-center items-center fixed bg-white mt-12 sm:hidden left-1/2 transform -translate-x-1/2 w-[90%] h-[72%] p-4">
           <ul className="flex flex-col text-neutral-darkGrayishBlue items-center space-y-6 p-8 text-base font-sm">
-            <li className="relative cursor-pointer">About</li>
-            <li className="relative cursor-pointer">Services</li>
-            <li className="relative cursor-pointer">Projects</li>
-            <button className="text-black bg-yellow font-fraunces p-4 font-semibold hover:bg-white/30 py-3 px-7 rounded-full transition-all duration-300 ease-in-out">
-              CONTACT
-            </button>
+            <li className="relative">
+              <a href="#about" className="cursor-pointer">About</a>
+            </li>
+            <li className="relative">
+              <a href="#services" className="cursor-pointer">Services</a>
+            </li>
+            <li className="relative">
+              <a href="#projects" className="cursor-pointer">Projects</a>
+            </li>
+            <li>
+              <a href='#contact' className="text-black bg-yellow font-fraunces p-4 font-semibold hover:bg-white/30 py-3 px-7 rounded-full transition-all duration-300 ease-in-out">
+                CONTACT
+              </a>
+            </li>
           </ul>
         </div>
       </div>
