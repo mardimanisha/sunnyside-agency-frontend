@@ -16,14 +16,23 @@ export const Navbar = () => {
 
       <div className="hidden sm:block">
         <ul className="flex items-center space-x-6 text-base font-sm">
-          <li className="relative underline-effect cursor-pointer">About</li>
-          <li className="relative underline-effect cursor-pointer">Services</li>
-          <li className="relative underline-effect cursor-pointer">Projects</li>
-          <button className="text-black bg-white font-fraunces p-4 font-semibold hover:text-white hover:bg-white/30 py-3 px-7 rounded-full transition-all duration-300 ease-in-out">
-            CONTACT
-          </button>
+          <li className="relative underline-effect">
+            <a href="#about" className="cursor-pointer">About</a>
+          </li>
+          <li className="relative underline-effect">
+            <a href="#services" className="cursor-pointer">Services</a>
+          </li>
+          <li className="relative underline-effect">
+            <a href="#projects" className="cursor-pointer">Projects</a>
+          </li>
+          <li className='text-black bg-white font-fraunces p-4 font-semibold hover:text-white hover:bg-white/30 py-3 px-7 rounded-full transition-all duration-300 ease-in-out'>
+            <a href='#contact' className="cursor-pointer">
+              CONTACT
+            </a>
+          </li>
         </ul>
       </div>
+
 
       {isButtonVisible && (
         <button className="sm:hidden" onClick={handleToggleMenu}>

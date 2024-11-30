@@ -44,9 +44,9 @@ const FeatureSection = ({
           <p className="font-barlow text-neutral-veryDarkGrayishBlue mb-6">
             {description}
           </p>
-          <span className="cursor-pointer uppercase font-fraunces font-bold underline underline-offset-2 decoration-softRed decoration-4">
+          <a href='#learnMore' className="cursor-pointer uppercase font-fraunces font-bold underline underline-offset-2 decoration-softRed decoration-4">
             Learn More
-          </span>
+          </a>
         </div>
       </div>
     </div>
